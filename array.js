@@ -13,10 +13,13 @@ arr3.sort()
 console.log({arr3})
 // Write a program to remove duplicates from the following array.Console the array without duplicates, and console another array that only contains the duplicates
 // let arr = ["boy", "man", "girl",            "school", "girl", "woman"];
-//let arr = ["boy", "man", "girl",            "school", "girl", "woman"];
+let arr = ["boy", "man", "girl",            "school", "girl", "woman"];
 
- //let result= arr.filter(item => item)
- 
+
+
+ let result = arr.filter((item,
+  index) => arr.indexOf(item) === index);
+  console.log(result)
 
 // Write a JS script to search for the following word in the array."food"If the word is present, return it else return "the search word was not found"let arr5 = ["the", "way", "x", 4];
 let arr5 = ["the", "way", "x", 4];
